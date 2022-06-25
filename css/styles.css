@@ -1,0 +1,310 @@
+:root {
+    --main-color: #212121;
+    --secondary-color: #757575;
+    --accent-color: #2196F3;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --transparent-color: rgba(255, 255, 255, 0.6);
+    --dark-background: #2F303A;
+    --team-background: #F5F4FA;
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    background-color: var(--white-color);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* header */
+.header {
+    padding: 24px 0 14px 0;
+}
+.header-container {
+    width: 1600px;
+    margin: 0 auto; 
+    display: block;
+    display: flex;
+}
+.header-logo {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    margin: 10px 93px 0 215px;
+}
+.logo-black {
+    color: var(--black-color);
+}
+.nav-links {
+    display: flex;
+    margin-right: 170px;
+}
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-color);
+    margin-right: 50px;
+}
+.nav-contacts {
+    display: flex;
+    margin-right: 215px;
+}
+.nav-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-color);
+    margin-left: 50px;
+}
+.nav-link.current {
+    color: var(--accent-color)
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-contact:focus,
+.nav-contact:hover {
+    color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+    background-color: var(--dark-background);
+}
+.hero-container {
+    width: 600px;
+    margin: 0 auto; 
+    display: block;
+    padding: 200px 0 200px 0;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-color);
+    padding: 10px 32px 10px 32px;
+    cursor: pointer;
+    margin: 0 auto; 
+    display: block;
+}
+
+/* features */
+.features {
+    padding: 94px 0 94px 0;
+}
+.features-container {
+    width: 1170px;
+    margin: 0 auto;
+    display: block;
+}
+.features-list {
+    display: flex;
+}
+.features-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.features-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-color);
+    margin-right: 30px;
+}
+
+/* work */
+.work {
+    padding-bottom: 94px;
+}
+.work-container {
+    width: 1170px;
+    margin: 0 auto;
+    display: block;
+}
+.work-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.work-list {
+    display: flex;
+}
+.work-image {
+    margin-right: 30px;
+}
+
+/* team */
+.team {
+    background-color: var(--team-background);
+    padding: 94px 0 94px 0;
+}
+.team-container {
+    width: 1170px;
+    margin: 0 auto;
+    display: block;   
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.team-list {
+    display: flex;
+    text-align: center;
+}
+.team-image {
+    margin-right: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.team-worker {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.team-profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* footer */
+.footer {
+    background-color: var(--dark-background);
+    padding: 60px 0 60px 0;
+}
+.footer-container {
+    width: 1600px;
+    margin: 0 auto; 
+    display: block;
+}
+.footer-logo {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    margin: 0 0 20px 215px;
+}
+.logo-white {
+    color: var(--white-color);
+}
+.address-list {
+    font-style: normal;
+    margin-left: 175px;
+}
+.footer-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-color);
+    margin-bottom: 10px;
+}
+.footer-contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--transparent-color);
+    margin-bottom: 10px;
+}
+.footer-address:hover,
+.footer-address:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--accent-color);
+}
+
+/* portfolio */
+.line {
+    border: none;
+    background-color: rgba(236, 236, 236, 1);
+    height: 1px;
+}
+.portfolio {
+    padding: 94px 0 94px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.portfolio-filters {
+    width: 630px;
+    display: flex;
+    margin-bottom: 34px;
+}
+.portfolio-button {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    background: var(--team-background);
+    border-radius: 4px;
+    border-color: var(--team-background);
+    padding: 6px 22px 6px 22px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+.portfolio-list {
+    width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-images {
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px;
+    
+}
+.portfolio-caption {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--main-color);
+    margin: 20px 0 4px 24px;
+}
+.portfolio-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--secondary-color);
+    margin: 0 0 20px 24px;
+}
